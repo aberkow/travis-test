@@ -1,2 +1,5 @@
 language: node_js
-script: echo ${TRAVIS_TEST}
+script: 
+  - echo ${TRAVIS_TEST}
+  - echo ${PWD_TEST}
+  - echo ${UNAME_TEST}
