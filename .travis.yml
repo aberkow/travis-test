@@ -3,3 +3,5 @@ script:
   - echo ${TRAVIS_TEST}
   - echo ${PWD_TEST}
   - echo ${UNAME_TEST}
+  - echo ${TRAVIS_NODE_VERSION}
+after_success: "curl -T sample.txt -u ${UNAME_TEST}:${PWD_TEST} ftp://ftp.adamjberkowitz.com/public_html/"
