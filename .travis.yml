@@ -4,4 +4,4 @@ script:
   - echo ${PWD_TEST}
   - echo ${UNAME_TEST}
   - echo ${TRAVIS_NODE_VERSION}
-after_success: "curl -T sample.txt -u ${UNAME_TEST}:${PWD_TEST} ftp://ftp.adamjberkowitz.com/public_html/"
+after_success: "curl -T sample.txt -u ${UNAME_TEST}:${PWD_TEST} ftp://77.104.152.175/public_html/"
